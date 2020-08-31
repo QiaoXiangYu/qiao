@@ -1,0 +1,64 @@
+本地仓库创建
+1 在当前文件夹安装git文件
+2 git可以配置全局的用户名和邮箱，也可以为单一的仓库配置用户名和邮箱。
+3 git config --global user.name "username"
+
+   git config --global user.email "email"
+
+4 查看配置成功
+   git config --global user.name
+
+   git config --global user.email 
+
+5 写入文件 
+   git add 文件名
+   git add . 全部文件
+   git commit -m “”文件备注“”  
+ 
+6 修改文件
+  
+7 查看仓库当前的状态 和查看修改过的地方
+   git status                              git diff
+
+8 提交修改过的文件
+
+
+9 版本退回 
+   查看历史提交记录和版本号用   git log  命令
+   git reset --hard  版本号
+   如果软件关了可以使用  git reflog  来获取以前的版本号
+
+    
+
+远程仓库上传
+
+1  创建一个本地的版本库
+    新建文件夹把git init把这个文件夹变成Git可管理的仓库
+
+2  把项目粘贴到这个本地Git仓库 然后添加到仓库里面 git add xxx    git commit -m "xxx"  或者git add .
+
+3 连接远程仓库
+   创建秘钥SSH KEY 在C盘.ssh文件夹里面，没有就创建ssh-keygen -t rsa -C "eml" 回车
+
+4 登录Github,把本地秘钥上传到Github,上
+
+5 在Github上面创建一个仓库
+   
+6 在Github上创建好Git仓库之后我们就可以和本地仓库关联
+   git remote add origin 仓库地址
+
+7 本地git库的所有内容推送到远程仓库  如果有错误是因为上一个远程仓库没有关掉
+   git push -u origin maste
+
+8 输入github账号 上传
+
+9 查看上传文件网址
+   1 Settings设置
+   2 找到 GitHub页面   
+   3 Pages资源   
+   4 Source主要  
+   5 选择master  出现网址后缀改为要查看的文件名
+
+
+错误解决 先删除远程 git 仓库
+ git remote rm origin
