@@ -1,0 +1,43 @@
+1 生成测试代码打包js
+
+2 程序会从src源码开始，打包最后输出到config配置文件里根据指令进行修改灵活
+
+3 开发环境指令
+    webpack ./src/index.js -o ./config/config.js --mode=development
+    整体打包环境就是开发环境
+4 生产环境指令
+    webpack ./src/index.js -o ./config/config.js --mode=production
+    整体打包环境就是开发环境
+    
+5 生产开发区别多一个压缩js代码
+生产环境和开发环境将es6模块编译成浏览器能识别的模块化
+webpack能处理js/json资源，可以使用插件来操作其他资源
+
+
+6 webpack使用插件处理其他资源
+
+
+7  – public [静态资源文件目录]
+
+​ – src [ 项目源文件目录 ]
+
+​ – dist [ 打包文件目录 ]
+
+​ – webpack.config.js [ webpack配置文件 ]
+
+​ – package.json [ NPM包管理配置文件 ]
+
+​ – node_modules [ 项目中的依赖存放目录 ]
+
+
+   
+
+
+
+
+
+ 打包完成属性
+  Hash打包唯一ID
+   Version 版本号
+   Time 时间
+  

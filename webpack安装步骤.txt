@@ -1,0 +1,28 @@
+1全局安装 
+npm install webpack webpack-cli –g
+
+2本地安装webpack
+  在项目文件夹里安装webpack 
+  npm install webpack webpack-cli --save-dev
+
+3 查看版本 
+   webpack -v
+
+4 创建package.json文件
+   npm init -y
+
+5 创建目录结构
+   ​ – public [静态资源文件目录]
+​    – src [ 项目源文件目录 ]
+​    – dist [ 打包文件目录 ]
+​    – webpack.config.js [ webpack配置文件 ]
+​    – package.json [ NPM包管理配置文件 ]
+​    – node_modules [ 项目中的依赖存放目录 ]
+
+
+解决用户权限问题cmd    右击win10菜单选择管理员cmd
+  以管理员身份运行 cmd
+  执行：get-ExecutionPolicy，显示Restricted，表示状态是禁止的
+  执行：set-ExecutionPolicy RemoteSigned
+  这时再执行get-ExecutionPolicy，就显示RemoteSigned
+  然后选择 A
